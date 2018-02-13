@@ -56,7 +56,7 @@
             })
                 .then(function (connection) {
                     console.log('connection started');
-
+                    //  Call the addGroup method in the chathub on every new user that joins
                     connection.invoke('addGroup', name);
 
                     document.getElementById('sendmessage').addEventListener('click', function (event) {
